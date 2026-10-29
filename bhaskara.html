@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhaskara | Quadrática</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html"><span class="logo-icon">x²</span><span>QUADRÁTICA<span class="logo-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="conceitos.html">Conceitos</a>
+      <a class="active" href="bhaskara.html">Bhaskara</a>
+      <a href="exemplos.html">Exemplos</a>
+      <a class="nav-quiz" href="quiz.html">Quiz ↗</a>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-hero">
+      <span class="eyebrow">MÓDULO 02 • RESOLUÇÃO</span>
+      <h1>Domine a fórmula de <span class="gradient-text">Bhaskara.</span></h1>
+      <p>Organize os coeficientes, calcule o delta e encontre as raízes da equação.</p>
+      
+      <!-- Imagem gerada por IA adicionada aqui -->
+      <div class="hero-image-container" style="margin-top: 2rem; max-width: 600px; border-radius: 12px; overflow: hidden;">
+        <Image src="image_generation_content/2320129236661408535" alt="Ilustração moderna representando a fórmula quadrática e a curva da parábola" />
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <h2>1. A fórmula</h2>
+      <p>A fórmula de Bhaskara permite encontrar as soluções reais de uma equação do segundo grau.</p>
+      <div class="equation-display large-equation">
+        x = <span class="fraction">
+          <span class="numerator">−b ± √Δ</span>
+          <span class="denominator">2a</span>
+        </span>
+      </div>
+      <p>O símbolo ± indica que devemos considerar duas possibilidades: uma usando a adição e outra usando a subtração.</p>
+    </section>
+
+    <section class="content-panel">
+      <h2>2. Calcule o discriminante (delta)</h2>
+      <div class="equation-display">Δ = b² − 4ac</div>
+      <p>O valor de delta ajuda a entender quantas raízes reais a equação possui.</p>
+
+      <div class="delta-grid">
+        <div class="delta-card">
+          <span class="delta-value">Δ &gt; 0</span>
+          <h3>Duas raízes reais</h3>
+          <p>Existem duas soluções reais diferentes.</p>
+        </div>
+        <div class="delta-card">
+          <span class="delta-value">Δ = 0</span>
+          <h3>Uma raiz real</h3>
+          <p>As duas soluções coincidem.</p>
+        </div>
+        <div class="delta-card">
+          <span class="delta-value">Δ &lt; 0</span>
+          <h3>Nenhuma raiz real</h3>
+          <p>Não há soluções no conjunto dos números reais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <h2>3. Experimente a calculadora</h2>
+      <p>Digite os valores de a, b e c. O coeficiente a não pode ser zero.</p>
+
+      <form id="equation-form" class="calculator-form">
+        <label>
+          Coeficiente a
+          <input type="number" id="coef-a" value="1" step="any" required>
+        </label>
+        <label>
+          Coeficiente b
+          <input type="number" id="coef-b" value="-5" step="any" required>
+        </label>
+        <label>
+          Coeficiente c
+          <input type="number" id="coef-c" value="6" step="any" required>
+        </label>
+        <button type="submit" class="button button-primary">Calcular raízes ↗</button>
+      </form>
+
+      <div id="calculator-result" class="result-box" aria-live="polite">
+        <span class="mini-label">RESULTADO</span>
+        <p>Preencha os coeficientes e clique em calcular.</p>
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <h2>4. Passo a passo de um exemplo</h2>
+      <p>Vamos resolver a equação x² − 5x + 6 = 0.</p>
+
+      <div class="steps-list">
+        <div class="step"><span>01</span><p><strong>Identifique:</strong> a = 1, b = −5 e c = 6.</p></div>
+        <div class="step"><span>02</span><p><strong>Calcule o delta:</strong> Δ = (−5)² − 4 · 1 · 6 = 25 − 24 = 1.</p></div>
+        <div class="step"><span>03</span><p><strong>Substitua na fórmula:</strong> x = (5 ± √1) / 2.</p></div>
+        <div class="step"><span>04</span><p><strong>Encontre as raízes:</strong> x₁ = (5 + 1) / 2 = 3 e x₂ = (5 − 1) / 2 = 2.</p></div>
+      </div>
+
+      <div class="success-box">
+        <span>✓</span>
+        <p>Resposta: as raízes são <strong>x = 2</strong> e <strong>x = 3</strong>.</p>
+      </div>
+    </section>
+
+    <div class="page-navigation">
+      <a class="button button-secondary" href="conceitos.html">← Conceitos</a>
+      <a class="button button-primary" href="exemplos.html">Praticar com exemplos →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html"><span class="logo-icon">x²</span><span>QUADRÁTICA<span class="logo-dot">.</span></span></a>
+    <p>Projeto educacional • 2026</p>
+  </footer>
+</body>
+</html>

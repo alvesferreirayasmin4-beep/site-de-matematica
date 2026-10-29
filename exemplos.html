@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos | Quadrática</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html"><span class="logo-icon">x²</span><span>QUADRÁTICA<span class="logo-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="conceitos.html">Conceitos</a>
+      <a href="bhaskara.html">Bhaskara</a>
+      <a class="active" href="exemplos.html">Exemplos</a>
+      <a class="nav-quiz" href="quiz.html">Quiz ↗</a>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-hero">
+      <span class="eyebrow">MÓDULO 03 • NA PRÁTICA</span>
+      <h1>Matemática se aprende <span class="gradient-text">praticando.</span></h1>
+      <p>Veja como resolver diferentes equações e entenda o raciocínio de cada etapa.</p>
+    </section>
+
+    <article class="example-card">
+      <div class="example-header">
+        <span class="example-number">EXEMPLO 01</span>
+        <span class="difficulty">Fácil</span>
+      </div>
+      <h2>x² − 9 = 0</h2>
+      <p>Observe que esta equação não possui o termo linear.</p>
+      <div class="steps-list">
+        <div class="step"><span>01</span><p>Isolamos o termo quadrático: x² = 9.</p></div>
+        <div class="step"><span>02</span><p>Calculamos a raiz quadrada: x = ±√9.</p></div>
+        <div class="step"><span>03</span><p>As soluções são x = 3 e x = −3.</p></div>
+      </div>
+      <div class="success-box"><span>✓</span><p><strong>Resposta:</strong> x₁ = 3 e x₂ = −3.</p></div>
+    </article>
+
+    <article class="example-card">
+      <div class="example-header">
+        <span class="example-number">EXEMPLO 02</span>
+        <span class="difficulty">Intermediário</span>
+      </div>
+      <h2>x² − 5x + 6 = 0</h2>
+      <div class="steps-list">
+        <div class="step"><span>01</span><p>Identificamos os coeficientes: a = 1, b = −5 e c = 6.</p></div>
+        <div class="step"><span>02</span><p>Calculamos: Δ = (−5)² − 4 · 1 · 6 = 1.</p></div>
+        <div class="step"><span>03</span><p>Aplicamos Bhaskara: x = (5 ± 1) / 2.</p></div>
+        <div class="step"><span>04</span><p>Obtemos x₁ = 3 e x₂ = 2.</p></div>
+      </div>
+      <div class="success-box"><span>✓</span><p><strong>Resposta:</strong> x₁ = 3 e x₂ = 2.</p></div>
+    </article>
+
+    <article class="example-card">
+      <div class="example-header">
+        <span class="example-number">EXEMPLO 03</span>
+        <span class="difficulty">Atenção ao delta</span>
+      </div>
+      <h2>x² + 2x + 5 = 0</h2>
+      <div class="steps-list">
+        <div class="step"><span>01</span><p>Identificamos: a = 1, b = 2 e c = 5.</p></div>
+        <div class="step"><span>02</span><p>Calculamos: Δ = 2² − 4 · 1 · 5 = 4 − 20 = −16.</p></div>
+        <div class="step"><span>03</span><p>Como o delta é negativo, não existe raiz real para essa equação.</p></div>
+      </div>
+      <div class="info-box"><span>💡</span><p>Lembre-se: delta negativo significa que a equação não possui raízes reais. Isso não exclui soluções nos números complexos.</p></div>
+    </article>
+
+    <section class="highlight-section practice-callout">
+      <div>
+        <span class="eyebrow">AGORA É SUA VEZ</span>
+        <h2>Você já conhece o caminho.</h2>
+        <p>Teste seus conhecimentos com perguntas sobre conceitos, delta e raízes.</p>
+      </div>
+      <a href="quiz.html" class="button button-primary">Ir para o quiz →</a>
+    </section>
+
+    <div class="page-navigation">
+      <a class="button button-secondary" href="bhaskara.html">← Bhaskara</a>
+      <a class="button button-primary" href="quiz.html">Fazer o quiz →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html"><span class="logo-icon">x²</span><span>QUADRÁTICA<span class="logo-dot">.</span></span></a>
+    <p>Projeto educacional • 2026</p>
+  </footer>
+</body>
+</html>

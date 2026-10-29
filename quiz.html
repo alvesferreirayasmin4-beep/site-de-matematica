@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Quadrática</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html"><span class="logo-icon">x²</span><span>QUADRÁTICA<span class="logo-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="conceitos.html">Conceitos</a>
+      <a href="bhaskara.html">Bhaskara</a>
+      <a href="exemplos.html">Exemplos</a>
+      <a class="nav-quiz active" href="quiz.html">Quiz ↗</a>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-hero">
+      <span class="eyebrow">MÓDULO 04 • DESAFIO FINAL</span>
+      <h1>Hora de testar seus <span class="gradient-text">conhecimentos.</span></h1>
+      <p>Responda às cinco questões e descubra como está seu domínio do conteúdo.</p>
+    </section>
+
+    <section class="quiz-panel">
+      <div class="quiz-top">
+        <span class="mini-label">SEU DESAFIO</span>
+        <span id="quiz-counter">Pergunta 1 de 5</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="quiz-progress" class="progress-fill"></div>
+      </div>
+
+      <div id="quiz-content">
+        <h2 id="quiz-question">Qual é a forma geral de uma equação do segundo grau?</h2>
+        <div id="quiz-options" class="quiz-options"></div>
+        <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+        <button id="quiz-next" class="button button-primary" disabled>Próxima pergunta →</button>
+      </div>
+
+      <div id="quiz-result" class="quiz-result" hidden>
+        <div class="result-trophy">✦</div>
+        <span class="eyebrow">DESAFIO CONCLUÍDO</span>
+        <h2 id="quiz-final-title">Muito bem!</h2>
+        <p id="quiz-score" class="score-display"></p>
+        <p id="quiz-message"></p>
+        <button id="quiz-restart" class="button button-primary">Tentar novamente ↻</button>
+      </div>
+    </section>
+
+    <section class="content-panel quiz-tip">
+      <h2>Precisa revisar?</h2>
+      <p>Volte aos conceitos, relembre a fórmula de Bhaskara e tente novamente. Errar faz parte do aprendizado!</p>
+      <div class="hero-actions">
+        <a class="button button-secondary" href="conceitos.html">Revisar conceitos</a>
+        <a class="button button-secondary" href="bhaskara.html">Revisar Bhaskara</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html"><span class="logo-icon">x²</span><span>QUADRÁTICA<span class="logo-dot">.</span></span></a>
+    <p>Projeto educacional • 2026</p>
+  </footer>
+</body>
+</html>

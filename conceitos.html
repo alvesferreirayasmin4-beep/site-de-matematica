@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceitos | Quadrática</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">
+      <span class="logo-icon">x²</span>
+      <span>QUADRÁTICA<span class="logo-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a class="active" href="conceitos.html">Conceitos</a>
+      <a href="bhaskara.html">Bhaskara</a>
+      <a href="exemplos.html">Exemplos</a>
+      <a class="nav-quiz" href="quiz.html">Quiz ↗</a>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-hero">
+      <span class="eyebrow">MÓDULO 01 • FUNDAMENTOS</span>
+      <h1>Primeiro, vamos entender os <span class="gradient-text">conceitos.</span></h1>
+      <p>Antes de resolver uma equação, precisamos reconhecer seus elementos.</p>
+    </section>
+
+    <section class="content-panel">
+      <h2>O que é uma equação do segundo grau?</h2>
+      <p>
+        É uma equação matemática em que a incógnita aparece elevada à
+        segunda potência, ou seja, ao quadrado. Sua forma geral é:
+      </p>
+      <div class="equation-display">ax² + bx + c = 0</div>
+      <p>
+        Nessa expressão, <strong>a, b e c</strong> são números reais,
+        e o coeficiente <strong>a precisa ser diferente de zero</strong>.
+        Caso contrário, não teremos uma equação do segundo grau.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading left-heading">
+        <span class="eyebrow">IDENTIFIQUE CADA PARTE</span>
+        <h2>Os três coeficientes</h2>
+      </div>
+
+      <div class="coefficient-grid">
+        <article class="coefficient-card">
+          <span class="coefficient-letter letter-purple">a</span>
+          <h3>Coeficiente quadrático</h3>
+          <p>Acompanha o termo x² e nunca pode ser zero em uma equação do segundo grau.</p>
+        </article>
+        <article class="coefficient-card">
+          <span class="coefficient-letter letter-blue">b</span>
+          <h3>Coeficiente linear</h3>
+          <p>Acompanha o termo x. Pode ser positivo, negativo ou igual a zero.</p>
+        </article>
+        <article class="coefficient-card">
+          <span class="coefficient-letter letter-pink">c</span>
+          <h3>Termo independente</h3>
+          <p>É o número sem a incógnita. Também pode ser positivo, negativo ou zero.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <h2>Exemplo de identificação</h2>
+      <p>Considere a equação:</p>
+      <div class="equation-display">2x² + 5x − 3 = 0</div>
+      <div class="steps-list">
+        <div class="step"><span>01</span><p><strong>a = 2</strong> — número que acompanha x².</p></div>
+        <div class="step"><span>02</span><p><strong>b = 5</strong> — número que acompanha x.</p></div>
+        <div class="step"><span>03</span><p><strong>c = −3</strong> — termo independente.</p></div>
+      </div>
+      <div class="info-box">
+        <span>💡</span>
+        <p>Quando um termo aparece sem número escrito na frente, seu coeficiente é 1. Por exemplo, x² equivale a 1x².</p>
+      </div>
+    </section>
+
+    <section class="content-panel">
+      <h2>Completa e incompleta</h2>
+      <div class="comparison-grid">
+        <div class="comparison-item">
+          <span class="mini-label">COMPLETA</span>
+          <h3>2x² + 5x − 3 = 0</h3>
+          <p>Apresenta os três termos: ax², bx e c.</p>
+        </div>
+        <div class="comparison-item">
+          <span class="mini-label">INCOMPLETA</span>
+          <h3>3x² − 12 = 0</h3>
+          <p>O termo linear não aparece, então b = 0.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-navigation">
+      <a class="button button-secondary" href="index.html">← Início</a>
+      <a class="button button-primary" href="bhaskara.html">Próxima etapa →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html"><span class="logo-icon">x²</span><span>QUADRÁTICA<span class="logo-dot">.</span></span></a>
+    <p>Projeto educacional • 2026</p>
+  </footer>
+</body>
+</html>
